@@ -5,5 +5,6 @@
 @endsection
 
 @section('page-content')
-asd
+
+@dump($comics)
 @endsection

@@ -1,24 +1,24 @@
 :root {
-  /*╔════════════════════════════╗
+    /*╔════════════════════════════╗
               COLORS
     ╚════════════════════════════╝*/
 
-  --clr-active: rgb(2, 130, 249);
-  --clr-text-1: #fff;
-  --clr-bg-footer: rgb(48, 48, 48);
-  --clr-bg-main: rgb(28, 28, 28);
-  /*╔════════════════════════════╗
+    --clr-active: rgb(2, 130, 249);
+    --clr-txt-1: #fff;
+    --clr-bg-footer: rgb(48, 48, 48);
+    --clr-bg-main: rgb(28, 28, 28);
+    /*╔════════════════════════════╗
           COMPONENT DIMENSION
     ╚════════════════════════════╝*/
-  /* width */
-  --wdt-container-xl: 80rem;
-  /* heigth */
-  --hgt-item: 4rem;
-  --hgt-item-lg: 4.5rem;
-  --hgt-item-sm: 2.5rem;
+    /* width */
+    --wdt-container-xl: 80rem;
+    /* heigth */
+    --hgt-item: 4rem;
+    --hgt-item-lg: 4.5rem;
+    --hgt-item-sm: 2.5rem;
 
-  /*╔════════════════════════════╗
+    /*╔════════════════════════════╗
                 GUTTERS
     ╚════════════════════════════╝*/
-  --space-unit: 1rem;
+    --space-unit: 1rem;
 }
