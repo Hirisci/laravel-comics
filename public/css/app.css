@@ -12,7 +12,7 @@
   ╚════════════════════════════╝*/
   /* width */
   --wdt-container-xl: 80rem;
-  /* heigth */
+  /* height */
   --hgt-item: 4rem;
   --hgt-item-lg: 4.5rem;
   --hgt-item-sm: 2.5rem;
@@ -378,6 +378,12 @@ footer {
 }
 .footer-bot__social img {
   height: 1.5rem;
+}
+
+.jumbo {
+  background-image: url("../img/images/jumbotron.jpg");
+  background-position: top center;
+  height: 45vh;
 }
 
 button {
