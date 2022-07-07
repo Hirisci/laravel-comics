@@ -1,0 +1,28 @@
+.comic-list {
+    background-color: var(--clr-bg-main);
+    color: var(--clr-txt-1);
+    .container {
+        position: relative;
+        padding: var(--p-xl);
+    }
+    &__box {
+        background-color: var(--clr-active);
+        padding: var(--p-sm) var(--p-md);
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+    }
+    &__display {
+        padding-top: var(--p-md);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1.5rem;
+    }
+    &__img {
+        margin-bottom: var(--m-sm);
+        width: 100%;
+    }
+}

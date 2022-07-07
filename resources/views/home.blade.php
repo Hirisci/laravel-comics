@@ -1,10 +1,8 @@
 @extends('layouts.main')
 
 @section('page-title')
-    Home Page
 @endsection
 
 @section('page-content')
-
-@dump($comics)
+    @include('partials.comics-list')
 @endsection

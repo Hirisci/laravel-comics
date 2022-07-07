@@ -320,12 +320,11 @@ footer {
   background-color: var(--clr-bg-footer);
   color: var(--clr-txt-1);
 }
-
-.container {
+footer .container {
   position: relative;
   overflow: hidden;
 }
-.container .logo-footer {
+footer .container .logo-footer {
   position: absolute;
   right: 0;
   top: 50%;
@@ -384,6 +383,35 @@ footer {
   background-image: url("../img/images/jumbotron.jpg");
   background-position: top center;
   height: 45vh;
+}
+
+.comic-list {
+  background-color: var(--clr-bg-main);
+  color: var(--clr-txt-1);
+}
+.comic-list .container {
+  position: relative;
+  padding: var(--p-xl);
+}
+.comic-list__box {
+  background-color: var(--clr-active);
+  padding: var(--p-sm) var(--p-md);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+.comic-list__display {
+  padding-top: var(--p-md);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.5rem;
+}
+.comic-list__img {
+  margin-bottom: var(--m-sm);
+  width: 100%;
 }
 
 button {
