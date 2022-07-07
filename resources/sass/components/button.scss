@@ -6,3 +6,8 @@ button {
     font-weight: 700;
     color: var(--clr-txt-1);
 }
+
+.btn--comic-list {
+    margin-top: var(--m-md);
+    background-color: var(--clr-active);
+}

@@ -391,7 +391,8 @@ footer .container .logo-footer {
 }
 .comic-list .container {
   position: relative;
-  padding: var(--p-xl);
+  padding-top: var(--p-xl);
+  padding-bottom: var(--p-md);
 }
 .comic-list__box {
   background-color: var(--clr-active);
@@ -406,12 +407,17 @@ footer .container .logo-footer {
 .comic-list__display {
   padding-top: var(--p-md);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 1.5rem;
 }
 .comic-list__img {
   margin-bottom: var(--m-sm);
   width: 100%;
+}
+.comic-list .btn-list {
+  padding: var(--p-sm);
+  display: flex;
+  justify-content: center;
 }
 
 button {
@@ -420,4 +426,9 @@ button {
   border: 2px solid var(--clr-active);
   font-weight: 700;
   color: var(--clr-txt-1);
+}
+
+.btn--comic-list {
+  margin-top: var(--m-md);
+  background-color: var(--clr-active);
 }

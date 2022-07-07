@@ -3,7 +3,8 @@
     color: var(--clr-txt-1);
     .container {
         position: relative;
-        padding: var(--p-xl);
+        padding-top: var(--p-xl);
+        padding-bottom: var(--p-md);
     }
     &__box {
         background-color: var(--clr-active);
@@ -18,11 +19,16 @@
     &__display {
         padding-top: var(--p-md);
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
         gap: 1.5rem;
     }
     &__img {
         margin-bottom: var(--m-sm);
         width: 100%;
+    }
+    .btn-list {
+        padding: var(--p-sm);
+        display: flex;
+        justify-content: center;
     }
 }
