@@ -1,0 +1,8 @@
+button {
+    text-transform: uppercase;
+    padding: var(--p-xs) var(--p-md);
+    border: 2px solid var(--clr-active);
+
+    font-weight: 700;
+    color: var(--clr-txt-1);
+}
