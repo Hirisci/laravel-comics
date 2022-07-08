@@ -4,11 +4,11 @@
             current series
         </div>
        <div class="comic-list__display">
-        @foreach ($comics as $comic)
-            <div>
-                <img class="comic-list__img" src="{{$comic['thumb']}}" alt="">
-                <div class="comic-list__title">{{$comic['series']}}</div>
-            </div>
+        @foreach ($comics as $idx => $comic)
+            <a href="{{route('comics',['id'=> $idx])}}">
+                    <img class="comic-list__img" src="{{$comic['thumb']}}" alt="">
+                    <div class="comic-list__title">{{$comic['series']}}</div>
+            </a>
         @endforeach
        </div>
        <div class="btn-list">

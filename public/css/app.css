@@ -424,6 +424,10 @@ footer .container .logo-footer {
   display: flex;
   justify-content: center;
 }
+.comic-list a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .shop {
   background-color: var(--clr-active);
