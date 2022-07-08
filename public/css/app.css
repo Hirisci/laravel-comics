@@ -5,8 +5,12 @@
   ╚════════════════════════════╝*/
   --clr-active: rgb(2, 130, 249);
   --clr-txt-1: #fff;
+  --clr-txt-2: rgb(0, 63, 94);
   --clr-bg-footer: rgb(48, 48, 48);
   --clr-bg-main: rgb(28, 28, 28);
+  --clr-bg-table: rgb(85, 186, 89);
+  --clr-bg-img: rgb(0, 169, 217);
+  --clr-bg-gray: rgb(246, 246, 246);
   /*╔════════════════════════════╗
         COMPONENT DIMENSION
   ╚════════════════════════════╝*/
@@ -381,6 +385,7 @@ footer .container .logo-footer {
 
 .jumbo {
   background-image: url("../img/images/jumbotron.jpg");
+  background-size: cover;
   background-position: top center;
   height: 45vh;
 }
@@ -445,6 +450,125 @@ footer .container .logo-footer {
 }
 .shop .card:last-child img {
   height: 3rem;
+}
+
+.comic {
+  color: var(--clr-txt-2);
+}
+.comic .container {
+  max-width: 60rem;
+}
+.comic__title {
+  background-color: var(--clr-active);
+  position: relative;
+  height: 7rem;
+}
+.comic__title .img {
+  position: absolute;
+  bottom: 1rem;
+  border: 1px solid white;
+}
+.comic__title .img__typo, .comic__title .img__gallery {
+  color: white;
+  background-color: rgb(0, 169, 217);
+  padding: 0.3rem;
+  text-transform: uppercase;
+  font-size: small;
+}
+.comic__title .img__typo {
+  position: absolute;
+  top: 0;
+}
+.comic__title .img__gallery {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.comic__body {
+  padding: var(--p-xxl) 0;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.comic__name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.comic__table {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: var(--m-md) 0;
+  background-color: var(--clr-bg-table);
+  border: 1px solid black;
+}
+.comic__table-sx {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: var(--p-md);
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 700;
+}
+.comic__table-dx {
+  padding: var(--p-md);
+  border-left: 1px solid black;
+  color: white;
+}
+.comic__price {
+  color: white;
+}
+.comic__description {
+  line-height: 1.75rem;
+  opacity: 0.75;
+  color: black;
+}
+.comic__body-dx {
+  text-align: right;
+}
+.comic__bottom {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  background-color: var(--clr-bg-gray);
+}
+.comic__info {
+  font-size: small;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.comic__info-sx, .comic__info-dx {
+  width: 50%;
+}
+.comic__info-title {
+  padding: var(--p-xl) 0;
+}
+.comic__info-list {
+  padding: var(--p-md) 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.comic__info-list p {
+  width: 25%;
+  font-weight: 700;
+}
+.comic__info-list:last-of-type {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.comic__info-body {
+  width: 75%;
+}
+.comic__info a {
+  text-decoration: none;
+  color: var(--clr-active);
+  font-weight: 900;
+}
+.comic__info a:visited {
+  color: var(--clr-active);
 }
 
 button {
